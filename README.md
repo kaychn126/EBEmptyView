@@ -1,6 +1,8 @@
 # EBEmptyView
 one line code to show emptyView in UITableView or UIScrollView
 
+![ScreenShot](https://github.com/kaychn126/EBEmptyView/blob/master/Simulator%20Screen%20Shot.png)
+
 #Installation
 drag 'EBEmptyView' dir to your project
 
