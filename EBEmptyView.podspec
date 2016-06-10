@@ -14,11 +14,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'EBEmpty/*.{h,m}'
-  s.resources = 'EBEmpty/*.png'
+  s.source_files = 'EmptyView/*.{h,m}'
+  s.resources = 'EBEmptyView/*.png'
 
   s.frameworks = 'Foundation', 'UIKit'
   #s.private_header_files = 'Classes/ios/private/*.h'
 
-  #s.dependency 'FLKAutoLayout', '~> 0.1'
 end
