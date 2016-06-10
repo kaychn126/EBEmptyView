@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'EmptyView/*.{h,m}'
-  s.resources = 'EBEmptyView/*.png'
+  s.resources = 'EmptyView/*.png'
 
   s.frameworks = 'Foundation', 'UIKit'
   #s.private_header_files = 'Classes/ios/private/*.h'
