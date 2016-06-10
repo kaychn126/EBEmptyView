@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/kaychn126/EBEmptyView.git"
 
   s.license      = 'MIT'
-  s.author       = { "YangXiaoyu" => "yulingtianxia@gmail.com" }
+  s.author       = { "kaychn" => "kaychn@126.com" }
   s.source       = { :git => "https://github.com/kaychn126/EBEmptyView.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
