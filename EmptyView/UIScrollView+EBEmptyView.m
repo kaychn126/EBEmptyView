@@ -15,35 +15,35 @@
 static char kAssociatedEmptyViewKey;
 
 @implementation UIScrollView (EBEmptyView)
-@dynamic eb_emptyView;
+@dynamic ezb_emptyView;
 
-- (void)setEb_emptyView:(EBEmptyView *)eb_emptyView{
-    if (eb_emptyView != self.eb_emptyView) {
-        [self.eb_emptyView removeFromSuperview];
-        if (eb_emptyView) {
-            [self addSubview:eb_emptyView];
+- (void)setEzb_emptyView:(EBEmptyView *)ezb_emptyView{
+    if (ezb_emptyView != self.ezb_emptyView) {
+        [self.ezb_emptyView removeFromSuperview];
+        if (ezb_emptyView) {
+            [self addSubview:ezb_emptyView];
         }
-        objc_setAssociatedObject(self, &kAssociatedEmptyViewKey, eb_emptyView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &kAssociatedEmptyViewKey, ezb_emptyView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
 }
 
-- (EBEmptyView*)eb_emptyView{
+- (EBEmptyView*)ezb_emptyView{
     return objc_getAssociatedObject(self, &kAssociatedEmptyViewKey);
 }
 
 //显示默认空白页
-- (void)eb_showDefaultEmptyView:(BOOL)show{
-    [self eb_showEmptyView:show withEmptyImage:@"emptyImage" withEmptyText:nil];
+- (void)ezb_showDefaultEmptyView:(BOOL)show{
+    [self ezb_showEmptyView:show withImage:@"emptyImage" withText:nil];
 }
 
-- (void)eb_showEmptyView:(BOOL)show withEmptyImage:(NSString *)emptyImage withEmptyText:(NSString*)emptyText{
+- (void)- (void)ezb_showEmptyView:(BOOL)show withImage:(NSString *)emptyImage withText:(NSString*)emptyText{
     if (show) {
         EBEmptyView *emptyView = [[EBEmptyView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 300)];
         [emptyView.emptyImageView setImage:[UIImage imageNamed:emptyImage]];
         emptyView.emptyLabel.text = emptyText;
-        [self setEb_emptyView:emptyView];
+        [self setEzb_emptyView:emptyView];
     }else {
-        [self setEb_emptyView:nil];
+        [self setEzb_emptyView:nil];
     }
 }
 @end
