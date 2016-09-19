@@ -36,6 +36,10 @@ static char kAssociatedEmptyViewKey;
     [self ezb_showEmptyView:show withImage:@"emptyImage" withText:nil];
 }
 
+- (void)ezb_showEmptyView:(BOOL)show withText:(NSString*)emptyText{
+    [self ezb_showEmptyView:show withImage:@"emptyImage" withText:emptyText];
+}
+
 - (void)ezb_showEmptyView:(BOOL)show withImage:(NSString *)emptyImage withText:(NSString*)emptyText{
     if (show) {
         EBEmptyView *emptyView = [[EBEmptyView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 300)];

@@ -13,6 +13,8 @@
 
 - (void)ezb_showDefaultEmptyView:(BOOL)show;
 
+- (void)ezb_showEmptyView:(BOOL)show withText:(NSString*)emptyText;
+
 - (void)ezb_showEmptyView:(BOOL)show withImage:(NSString *)emptyImage withText:(NSString*)emptyText;
 @end
 

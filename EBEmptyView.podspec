@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EBEmptyView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "自定义空白页面"
   s.description  = <<-DESC
                     自定义空白页面，scrollview的category
