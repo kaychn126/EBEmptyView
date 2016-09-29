@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'EBEmptyView-framework'
-  s.version = '0.0.3'
+  s.version = '0.0.7'
   s.summary = '自定义空白页面'
   s.license = 'MIT'
   s.authors = {"kaychn"=>"kaychn@126.com"}

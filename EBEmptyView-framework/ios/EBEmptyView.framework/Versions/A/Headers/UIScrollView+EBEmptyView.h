@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 @class EBEmptyView;
 @interface UIScrollView (EBEmptyView)
-@property(nonatomic, strong)EBEmptyView *eb_emptyView;
+@property(nonatomic, strong)EBEmptyView *ezb_emptyView;
 
-- (void)eb_showDefaultEmptyView:(BOOL)show;
+- (void)ezb_showDefaultEmptyView:(BOOL)show;
 
-- (void)eb_showEmptyView:(BOOL)show withEmptyImage:(NSString *)emptyImage withEmptyText:(NSString*)emptyText;
+- (void)ezb_showEmptyView:(BOOL)show withText:(NSString*)emptyText;
+
+- (void)ezb_showEmptyView:(BOOL)show withImage:(NSString *)emptyImage withText:(NSString*)emptyText;
 @end
 
 @interface EBEmptyView : UIView
