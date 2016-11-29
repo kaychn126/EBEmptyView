@@ -42,7 +42,7 @@ static char kAssociatedEmptyViewKey;
 
 - (void)ezb_showEmptyView:(BOOL)show withImage:(NSString *)emptyImage withText:(NSString*)emptyText{
     if (show) {
-        EBEmptyView *emptyView = [[EBEmptyView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+        EBEmptyView *emptyView = [[EBEmptyView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 400)];
         [emptyView.emptyImageView setImage:[UIImage imageNamed:emptyImage]];
         emptyView.emptyLabel.text = emptyText;
         [self setEzb_emptyView:emptyView];
